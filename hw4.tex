@@ -28,10 +28,13 @@
 
 \begin{questions}
     \question{Develop a model for a pendulum with inertia
-        $J_p = 2.5 \left[\frac{N\,m\,s^2}{rad}\right]$ (at pin), mass $m = 1.6 \left[kg\right]$, and length $L = 1 \left[m\right]$. The pin introduces damping in the system that should be modeled as $\tau_b = b \dot{\theta}^3$, where b = $1.25 \left[\frac{N\,m\,s}{rad}\right]$. The input to the system is a torque at the pin given by $\tau = 12 \left[N\,m\right]$. Assume the system is acted on by a horizontal disturbance force at the end of the pendulum $\left(f(t) = 5 + \eta\text{, where} \eta\sim N(0,2)\right)$. The measurement of the angle of the pendulum is corrupted by zero mean Gaussian white noise with variance of 1 degree.}
+        $J_p = 2.5 \left[\frac{N\,m\,s^2}{rad}\right]$ (at pin), mass $m = 1.6 \left[kg\right]$, and length $L = 1 \left[m\right]$. The pin introduces damping in the system that should be modeled as $\tau_b = b \dot{\theta}^3$, where b = $1.25 \left[\frac{N\,m\,s}{rad}\right]$. The input to the system is a torque at the pin given by $\tau = 12 \left[N\,m\right]$. Assume the system is acted on by a horizontal disturbance force at the end of the pendulum $\left(f(t) = 5 + \eta\text{, where } \eta\sim N(0,2)\right)$. The measurement of the angle of the pendulum is corrupted by zero mean Gaussian white noise with variance of 1 degree.}
     \begin{parts}
         \part{Develop a simulation of the system.}
 
+        \solution{%
+             
+        }
         \part{Develop an extended Kalman filter to estimate the position and velocity (and any additional needed parameters) of the pendulum given measurements as described.}
 
         \part{Develop an unscented Kalman filter to estimate the position and velocity (and any additional needed parameters) of the pendulum given measurements as described.}
