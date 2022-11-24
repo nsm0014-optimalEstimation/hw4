@@ -33,8 +33,24 @@
         \part{Develop a simulation of the system.}
 
         \solution{%
-             
+            Figure \ref{fig:1} compares the modeled angular deflection of the pendulum through time with the measurements of that model.
+
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.7\linewidth]{Q1model.png}
+                \caption{Modeled pendulum and the measurement of deflection through time}
+                \label{fig:1}
+            \end{figure}
         }
+        We can model the pendulum by writing the angular acceleration,$\ddot{\theta}$, as a second-order ODE (Equation \ref{eq:1}). I assume small angle approximation based on my smaller time step.
+        \begin{equation}
+            \begin{split}
+                \ddot{\theta} & = \frac{\tau}{J_p} + \frac{f_{d}L\theta}{J_p} - \frac{mgL\theta}{Jp} - \frac{b\dot{\theta}^3}{Jp}
+            \end{split}
+            \label{eq:1}
+        \end{equation}
+        To get $\dot{\theta}$ and $\theta$ we can integrate once, and then integrate again, respectively.
+        \clearpage
         \part{Develop an extended Kalman filter to estimate the position and velocity (and any additional needed parameters) of the pendulum given measurements as described.}
 
         \part{Develop an unscented Kalman filter to estimate the position and velocity (and any additional needed parameters) of the pendulum given measurements as described.}
